@@ -1,0 +1,40 @@
+<odoo>
+    <template id="customize_category_view" inherit_id="website_sale.products">
+
+        <!-- Bannière promotionnelle avant la grille des produits -->
+        <xpath expr="//div[@id='products_grid']" position="before">
+            <section class="alert alert-warning text-center my-3">
+                <strong>🔥 Promo spéciale : livraison gratuite sur toutes les commandes cette semaine !</strong>
+                <p>test</p>
+            </section>
+        </xpath>
+
+        <!-- Message après la grille de produits -->
+        <xpath expr="//div[@id='products_grid']" position="after">
+            <div class="text-center my-5">
+                <h3>Merci de visiter notre boutique !</h3>
+                <p>Contactez-nous si vous avez des questions ou des besoins spécifiques.</p>
+            </div>
+        </xpath>
+
+    </template>
+
+
+    <template id="custom_sidebar" inherit_id="website_sale.products">
+        <xpath expr="//aside[@id='products_grid_before']" position="inside">
+             <div class="lafayette-sidebar p-4 mb-4 shadow-sm rounded bg-white">
+                <h5 class="text-uppercase fw-bold mb-3" style="letter-spacing: 1px;">Catégories</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/shop?category=new" class="text-decoration-none text-dark">🆕 Nouveautés</a></li>
+                    <li class="mb-2"><a href="/shop?category=pret-a-porter" class="text-decoration-none text-dark">👗 Prêt-à-porter</a></li>
+                    <li class="mb-2"><a href="/shop?category=accessoires" class="text-decoration-none text-dark">👜 Accessoires</a></li>
+                    <li class="mb-2"><a href="/shop?category=chaussures" class="text-decoration-none text-dark">👠 Chaussures</a></li>
+                </ul>
+            </div>
+        </xpath>
+    </template>
+
+
+
+
+</odoo>
