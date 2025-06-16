@@ -16,16 +16,16 @@
               <div class="header-info">
                 <div class="s_social_media text-center o_not_editable" data-snippet="s_social_media"
                      data-name="Réseaux sociaux">
-                  <a target="_blank" href="#" class="s_social_media_facebook">
+                  <a target="_blank" href="https://www.facebook.com/christinaleongpage" class="s_social_media_facebook">
                     <i class="fa shadow-sm fa-facebook"/>
                   </a>
-                  <a target="_blank" href="#" class="s_social_media_instagram">
+                  <a target="_blank" href="https://www.instagram.com/christinaleong_rakotoniaina" class="s_social_media_instagram">
                     <i class="fa shadow-sm fa-instagram"/>
                   </a>
-                  <a target="_blank" href="#" class="s_social_media_tiktok">
+                  <a target="_blank" href="https://www.tiktok.com/@christinaleong_rak" class="s_social_media_tiktok">
                     <i class="fa shadow-sm fa-tiktok"/>
                   </a>
-                  <a target="_blank" href="#" class="s_social_media_youtube">
+                  <a target="_blank" href="https://www.youtube.com/@christinaleong4995" class="s_social_media_youtube">
                     <i class="fa shadow-sm fa-youtube"/>
                   </a>
                 </div>
@@ -88,28 +88,28 @@
           <section class="s_text_block pb16 pt32" data-snippet="s_text_block" data-name="Text"
                    style="background-image: none;">
             <a class="whatsapp_link" href="https://wa.me/0383721227" target="_blank">
-              <img src="/hk_front_website/static/src/img/whatsapp.png"/>
+              <img src="/hk_front/static/src/img/whatsapp.png"/>
             </a>
             <div class="container">
               <div class="row pt16 pb16">
                 <div class="o_colored_level col-lg-4">
                   <h5 class="mb-3 text-center">
-                    <img height="150" src="/hk_front_website/static/src/img/logo2.png" alt=""
+                    <img height="150" src="/hk_front/static/src/img/logo2.png" alt=""
                          class="img img-fluid o_we_custom_image"/>
                     <br/>
                   </h5>
                   <div class="s_social_media text-center o_not_editable" data-snippet="s_social_media"
                        data-name="Réseaux sociaux">
-                    <a target="_blank" href="#" class="s_social_media_facebook">
+                    <a target="_blank" href="https://www.facebook.com/christinaleongpage" class="s_social_media_facebook">
                       <i class="fa shadow-sm fa-facebook"/>
                     </a>
-                    <a target="_blank" href="#" class="s_social_media_instagram">
+                    <a target="_blank" href="https://www.instagram.com/christinaleong_rakotoniaina" class="s_social_media_instagram">
                       <i class="fa shadow-sm fa-instagram"/>
                     </a>
-                    <a target="_blank" href="#" class="s_social_media_tiktok">
+                    <a target="_blank" href="https://www.tiktok.com/@christinaleong_rak" class="s_social_media_tiktok">
                       <i class="fa shadow-sm fa-tiktok"/>
                     </a>
-                    <a target="_blank" href="#" class="s_social_media_youtube">
+                    <a target="_blank" href="https://www.youtube.com/@christinaleong4995" class="s_social_media_youtube">
                       <i class="fa shadow-sm fa-youtube"/>
                     </a>
                   </div>
@@ -160,7 +160,7 @@
                       <a href="#">PROMOTION</a>
                     </li>
                     <li>
-                      <a href="#">NOUVEAUTE</a>
+                      <a href="/shop">NOUVEAUTE</a>
                     </li>
                     <li>
                       <a href="#">SHOOT PRODUITS</a>

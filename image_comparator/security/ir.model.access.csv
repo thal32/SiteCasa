@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_image_comparator,access.image.comparator,model_image_comparator,base.group_user,1,1,1,1
+access_image_gallery,access.image.gallery,model_image_gallery,base.group_user,1,1,1,1
+access_image_comparison_result,access.image.comparison.result,model_image_comparison_result,base.group_user,1,1,1,1

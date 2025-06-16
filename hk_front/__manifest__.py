@@ -1,9 +1,9 @@
 {
-    'name': 'HK Website Front',
+    'name': 'HK Front',
     'description': '...',
     'category': '',
     'version': '17.0.0.0.0',
-    'author': 'Kael Andria',
+    'author': 'matthieu',
     'license': 'LGPL-3',
     'depends': ['website', 'website_sale', 'website_sale_wishlist'],
     'data': [
@@ -14,8 +14,8 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            '/hk_front_website/static/src/js/hk_js.js',
-            '/hk_front_website/static/src/scss/hk_style.scss',
+            '/hk_front/static/src/js/hk_js.js',
+            '/hk_front/static/src/scss/hk_style.scss',
         ],
     },
 }

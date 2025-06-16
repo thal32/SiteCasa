@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action window -->
+    <record id="action_image_comparator" model="ir.actions.act_window">
+        <field name="name">Image Comparator</field>
+        <field name="res_model">image.comparator</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Commencez à comparer vos images !
+            </p>
+        </field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="menu_image_comparator_root"
+              name="Image Comparator"
+              web_icon="image_comparator/static/description/icon.png"
+              sequence="10"/>
+
+    <menuitem id="menu_image_comparator"
+              name="Comparisons"
+              parent="menu_image_comparator_root"
+              action="action_image_comparator"
+              sequence="1"/>
+
+    <menuitem id="menu_image_gallery"
+              name="Galerie d'Images"
+              parent="menu_image_comparator_root"
+              action="action_image_gallery"
+              sequence="20"/>
+
+    <menuitem id="menu_gallery_comparison"
+              name="Comparaison avec Galerie"
+              parent="menu_image_comparator_root"
+              action="action_gallery_comparison"
+              sequence="30"/>
+</odoo>

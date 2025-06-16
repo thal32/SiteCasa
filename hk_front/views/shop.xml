@@ -286,10 +286,10 @@
           </a>
           <div id="payment" class="collapse show" data-bs-parent="#accordeon">
             <div class="payment_picto">
-              <img src="/hk_front_website/static/src/img/mvola.png"/>
-              <img src="/hk_front_website/static/src/img/airtel.png"/>
-              <img src="/hk_front_website/static/src/img/orange.png"/>
-              <img src="/hk_front_website/static/src/img/visa.png"/>
+              <img src="/hk_front/static/src/img/mvola.png"/>
+              <img src="/hk_front/static/src/img/airtel.png"/>
+              <img src="/hk_front/static/src/img/orange.png"/>
+              <img src="/hk_front/static/src/img/visa.png"/>
             </div>
           </div>
         </div>
