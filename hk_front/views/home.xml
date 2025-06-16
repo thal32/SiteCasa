@@ -92,40 +92,44 @@
             <div class="row content-category">
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag1.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="\hk_front\static\src\img\robe-longue-et-forme-noire.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Femme
                 </a>
               </div>
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag2.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="/hk_front/static/src/img/ensemble-costume-et-cravate.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Homme
                 </a>
               </div>
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag3.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="\hk_front\static\src\img\vetements-de-bebe.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Enfants
                 </a>
               </div>
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag4.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="\hk_front\static\src\img\bagueIco.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Bijoux
                 </a>
               </div>
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag5.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="\hk_front\static\src\img\sacIco.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Accessoires
                 </a>
               </div>
+              
               <div class="col-lg-2 pt16 pb16 o_colored_level">
                 <a href="#">
-                  <img src="/hk_front/static/src/img/catag6.png" class="img img-fluid mx-auto" alt=""/>
-                  Catégorie
+                  <img src="\hk_front\static\src\img\kit-de-maquillage.png" class="img img-fluid mx-auto p-4" alt=""/>
+                  Cosmetiques
                 </a>
               </div>
+              
+              
+              
             </div>
           </div>
         </section>
@@ -178,9 +182,6 @@
                     <div class="dynamic_snippet_template"/>
                   </div>
                 </section>
-              </div>
-              <div class="pt16 pb16 o_colored_level col-lg-4 ">
-                <img src="/hk_front/static/src/img/add.png" class="rounded img img-fluid mx-auto" alt=""/>
               </div>
             </div>
           </div>
