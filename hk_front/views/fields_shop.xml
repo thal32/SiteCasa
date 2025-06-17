@@ -8,6 +8,11 @@
       <xpath expr="//field[@name='detailed_type']" position="after">
         <field name="rem_product_custom" widget="percentage"/>
       </xpath>
+
+       <xpath expr="//field[@name='type']" position="after">
+        <field name="is_live"/>
+      </xpath>
+
     </field>
   </record>
 </odoo>

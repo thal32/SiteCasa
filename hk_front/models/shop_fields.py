@@ -8,3 +8,6 @@ class ProductTemplate(models.Model):
     rem_product_custom = fields.Float(
         string='Remise',
     )
+    is_live = fields.Boolean(
+        string="Produit en Live",
+    )
