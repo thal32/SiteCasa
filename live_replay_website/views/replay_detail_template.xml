@@ -1,0 +1,9 @@
+<odoo>
+  <template id="hk_front.replay_detail_template" name="Page Replay" page="True">
+    <t t-name="hk_front.replay_detail_template">
+      <div>
+        <h1>Replay Live</h1>
+      </div>
+    </t>
+  </template>
+</odoo>

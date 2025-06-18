@@ -1,0 +1,40 @@
+<odoo>
+  <template id="home_customize" inherit_id="website.homepage" name="Home Custom Replay">
+    <xpath expr="//div[@id='wrap']" position="inside">
+      <!-- SECTION REDIFFUSIONS DE LIVES -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Nos dernières rediffusions</h2>
+        <t t-set="replays" t-value="request.env['live.replay'].sudo().search([], order='date desc', limit=4)"/>
+        <div class="row">
+          <t t-foreach="replays" t-as="replay">
+            <div class="col-md-3 mb-4">
+              <div class="card h-100 shadow-sm">
+
+                <t t-if="replay.image">
+                  <img t-att-src="'/web/image/live.replay/%s/image' % replay.id" class="card-img-top" style="height: 180px; object-fit: cover;"/>
+                </t>
+                <t t-else="">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe t-att-src="replay.video_url" width="100%" height="180" frameborder="0" allowfullscreen="true"></iframe>
+                  </div>
+                </t>
+
+                <!-- Corps de la carte -->
+                <div class="card-body">
+                  <h5 class="card-title"><t t-esc="replay.name"/></h5>
+                  <p class="card-text"><small><t t-esc="replay.date.strftime('%d/%m/%Y')"/></small></p>
+                  <a t-att-href="replay.video_url" class="btn btn-primary btn-sm" target="_blank">Voir la vidéo</a>
+                  <a t-att-href="'/replay/%s' % replay.id" class="btn btn-primary btn-sm">Voir la rediffusion</a>
+                </div>
+
+              </div>
+            </div>
+          </t>
+          <t t-if="not replays">
+            <p class="text-muted text-center">Aucune rediffusion pour le moment.</p>
+          </t>
+        </div>
+      </section>
+    </xpath>
+  </template>
+</odoo>
