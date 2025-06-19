@@ -8,8 +8,6 @@
         "security/ir.model.access.csv",
         "views/live_replay_views.xml",
         "views/website_templates.xml",
-    ],
-    "views": [
         "views/replay_detail_template.xml",
     ],
     "installable": True,
