@@ -37,6 +37,8 @@
               <div id="o_main_nav" class="o_main_nav container">
                 <t t-call="website.navbar_nav">
                   <t t-set="_nav_class" t-valuef="me-auto"/>
+
+                  
                   <t t-foreach="website.menu_id.child_id" t-as="submenu">
                     <t t-call="website.submenu">
                       <t t-set="item_class" t-valuef="nav-item"/>

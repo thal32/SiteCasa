@@ -294,6 +294,88 @@
           </div>
         </div>
       </div>
+      <t t-set="related_products" t-value="request.env['product.template'].search([('public_categ_ids', 'in', product.public_categ_ids.ids), ('id', '!=', product.id)], limit=7)"/>
+      <t t-if="related_products">
+        <div class="mt-5">
+          <h4 class="mb-4">Vous aimerez aussi</h4>
+          <div class="row">
+            <t t-foreach="related_products" t-as="related">
+              <div class="col-md-3 col-sm-6 mb-4 text-center">
+                <a t-att-href="related.website_url" class="text-decoration-none">
+                  <img t-att-src="'/web/image/product.template/%s/image_1920' % related.id" class="img img-fluid mb-2" style="max-height: 200px; object-fit: contain;"/>
+                  <p class="fw-bold mb-1"><t t-esc="related.name"/></p>
+                  <p class="text-muted"><t t-esc="related.list_price"/> €</p>
+                </a>
+              </div>
+            </t>
+          </div>
+        </div>
+      </t>
+
+
+<t t-set="product_color" t-value="None"/>
+<t t-set="product_brand" t-value="None"/>
+
+<!-- Récupération couleur et marque -->
+<t t-foreach="product.valid_product_template_attribute_line_ids" t-as="line">
+  <t t-set="color_attr" t-value="'couleur'"/>
+  <t t-set="brand_attr" t-value="'marque'"/>
+
+  <!-- Couleur -->
+  <t t-if="line.attribute_id.name.lower() == color_attr">
+    <t t-set="product_color" t-value="line.product_template_value_ids[0].name if line.product_template_value_ids else None"/>
+  </t>
+
+  <!-- Marque -->
+  <t t-if="line.attribute_id.name.lower() == brand_attr">
+    <t t-set="product_brand" t-value="line.product_template_value_ids[0].name if line.product_template_value_ids else None"/>
+  </t>
+</t>
+
+<!-- Suggérer les produits de même couleur ou marque -->
+<t t-set="suggested_products"
+   t-value="request.env['product.template'].search([
+     '|',
+     ('valid_product_template_attribute_line_ids.product_template_value_ids.name', '=', product_color),
+     ('valid_product_template_attribute_line_ids.product_template_value_ids.name', '=', product_brand),
+     ('id', '!=', product.id),
+     ('website_published', '=', True)
+   ], limit=4)"/>
+
+<!-- Affichage uniquement si des produits sont trouvés -->
+<t t-if="suggested_products">
+  <div class="mt-5">
+    <h4 class="mb-4">Accessoires assortis</h4>
+    <div class="row">
+      <t t-foreach="suggested_products" t-as="suggested">
+        <div class="col-md-3 col-sm-6 mb-4 text-center">
+          <a t-att-href="suggested.website_url" class="text-decoration-none">
+            <img t-att-src="'/web/image/product.template/%s/image_1920' % suggested.id"
+                 class="img img-fluid mb-2"
+                 style="max-height: 200px; object-fit: contain;"/>
+            <p class="fw-bold mb-1">
+              <t t-esc="suggested.name"/>
+            </p>
+            <p class="text-muted">
+              <t t-esc="suggested.list_price"/> €
+            </p>
+          </a>
+        </div>
+      </t>
+    </div>
+  </div>
+</t>
+
+
+
+
     </xpath>
+
   </template>
+
+
+
+
+
+
 </odoo>

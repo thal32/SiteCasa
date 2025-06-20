@@ -471,7 +471,7 @@ main {
     .o_add_wishlist .fa-heart:before,
     .fa-heart-o:before {
         content: '' !important;
-        background-image: url('/hk_front_website/static/src/img/ico_heart.svg');
+        background-image: url('/hk_front/static/src/img/ico_heart.svg');
         width: 32px;
         height: 26px;
         display: inline-block;
@@ -479,7 +479,7 @@ main {
     }
     .btn:disabled .fa-heart:before,
     .disabled .fa-heart-o:before {
-        background-image: url('/hk_front_website/static/src/img/ico_heart_active.svg');
+        background-image: url('/hk_front/static/src/img/ico_heart_active.svg');
     }
     .btn:disabled {
         opacity: 1 !important;
@@ -708,4 +708,12 @@ td:hover .oe_product_image_img_wrapper img {
 
 
 
+
+@media (min-width: 992px) {
+  .product-image-sticky {
+    position: sticky;
+    top: 100px;
+    z-index: 2;
+  }
+}
 
