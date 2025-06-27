@@ -1,6 +1,6 @@
 {
     'name': 'HK Front',
-    'description': '...',
+    'description': 'Front du site web Odoo',
     'category': '',
     'version': '17.0.0.0.0',
     'author': 'matthieu',
